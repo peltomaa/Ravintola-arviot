@@ -1,5 +1,4 @@
 # Ravintola-arviot
-
 ## Ominaisuudet
 ### Näkymät
 - Julkinen käyttöliittymä
@@ -8,12 +7,32 @@
   - Ravintola näkymä
     - Käyttäjä voi lisätä ravintolalle arvion
 - Admin käyttöliittymä
-  - Ravintola näkymä
-    - Lisää ravintola
-    - Muokkaa ravintolaa
-    - Poista ravintola
-### Tietokanta
+  - Lisää ravintola
+  - Muokkaa ravintolaa
+
+### UI
+#### Ravintola kartta
+![Ravintola kartta](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/map.png "Ravintola kartta")
+
+#### Ravintola näkymä
+![Ravintola näkymä](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/item.png "Ravintola näkymä")
+
+#### Ravintola näkymä
+![Ravintola näkymä](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/item.png "Ravintola näkymä")
+
+### Kirjaudu/registeröidy
+![Kirjaudu tai registeröidy](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/login.png "Kirjaudu tai registeröidy")
+
+### Lisää ravintola
+![Lisää ravintola](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/add.png "Lisää ravintola")
+
+### Muokkaa ravintolaa
+![Muokkaa ravintolaa](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/edit.png "Muokkaa ravintolaa")
+
+
+## Tietokanta
 ![Tietokanta](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/db.png "Tietokanta")
+
 ### SQL
 ```sql
 CREATE TYPE "user_roles" AS ENUM (
