@@ -13,7 +13,7 @@
     - Muokkaa ravintolaa
     - Poista ravintola
 ### Tietokanta
-![Tietokanta](https://github.com/peltomaa/Ravintola-arviot/raw/main/db.png "Tietokanta")
+![Tietokanta](https://github.com/peltomaa/Ravintola-arviot/raw/main/img/db.png "Tietokanta")
 ### SQL
 ```sql
 CREATE TYPE "user_roles" AS ENUM (
@@ -32,6 +32,9 @@ CREATE TABLE "users" (
 CREATE TABLE "resturaunts" (
   "id" SERIAL PRIMARY KEY,
   "name" varchar,
+  "address" varchar,
+  "website" varchar,
+  "phone" varchar,
   "lat" bigint,
   "lng" bigint,
   "created_at" timestamp,
@@ -39,7 +42,7 @@ CREATE TABLE "resturaunts" (
 );
 
 CREATE TABLE "reviews" (
-  "name" varchar,
+  "text" varchar,
   "score" int,
   "resturaunt_id" int,
   "user_id" int,
@@ -56,7 +59,6 @@ CREATE TABLE "resturaunt_labels" (
 CREATE TABLE "labels" (
   "id" SERIAL PRIMARY KEY,
   "name" varchar,
-  "color" varchar,
   "created_at" timestamp,
   "updated_at" timestamp
 );
